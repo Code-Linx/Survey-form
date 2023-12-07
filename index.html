@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>FreeCodeCamp Survey Form</title>
+</head>
+<body>
+    <form action=""  id="survey-form">
+        <section aria-colcount="header"><h1 id="title">freeCodeCamp survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p></section>
+
+        <!-- end of form header -->
+
+        <fieldset class="info">
+            <label id="name-label" for="name">Name <input id="name" type="text" required placeholder="Enter your name"></label>
+                    <label id="email-label" for="email">Email <input id="email" type="email" required placeholder="Enter your email"></label>
+                    <label id="number-label" for="number">Age(optional) <input id="number" type="number"  min="13" max="120" required placeholder="Age"></label>
+        </fieldset>
+        <!-- end of info section -->
+
+        <fieldset>
+            <label>Which option best describes your current role?
+                <select id="dropdown" name="role">
+                    <option value="">Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full time job</option>
+                    <option value="3">Full time learner</option>
+                    <option value="4">Perfer not to say</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <!-- end of rol section -->
+
+        <fieldset>
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                    <label for="definitely"><input id="definitely" name="recommend" type="radio" class="inline" value="1" checked>Definitely</label>
+                    <label for="maybe"><input id="maybe" name="recommend" type="radio" class="inline" value="2">Maybe</label>
+                    <label for="Not=sure"><input id="not=sure" name="recommend" type="radio" class="inline" value="3">Not sure</label>
+                    </legend>
+        </fieldset>
+
+        <!-- end of reccommendation section -->
+
+
+        <fieldset>
+            <legend>What would you like to see improved? (Check all that apply)</legend>
+                    <label for="frontend-project">
+                        <input id="frontend-project" class="inline" type="checkbox" name="solution" value="1">Frontend-project
+                    </label>
+                    <label for="backend-project">
+                        <input id="backend-project" class="inline" type="checkbox" name="solution" value="2">Backend-project
+                    </label>
+            
+                    <label for="Data-Visualization">
+                        <input id="Data-Visualization" class="inline" type="checkbox" name="solution" value="3">Data Visualization
+                    </label>
+            
+                    <label for="Challenges">
+                        <input id="Challenges" class="inline" type="checkbox" name="solution" value="4">Challenges
+                    </label>
+                    <label for="Open-Source-Community">
+                        <input id="Open-Source-Community" class="inline" type="checkbox" name="backend-project" value="5">Open Source Community
+                    </label>
+            
+                    <label for="Gitter-help-rooms">
+                        <input id="Gitter-help-rooms" class="inline" type="checkbox" name="backend-project" value="6">Gitter help rooms
+                    </label>
+                    
+                    <label for="Videos">
+                        <input id="Videos" class="inline" type="checkbox" name="backend-project" value="7">Videos
+                    </label>
+            
+                    <label for="City-Meetups">
+                        <input id="City-Meetups" class="inline" type="checkbox" name="backend-project" value="8">City Meetups
+                    </label>
+            
+                    <label for="wiki">
+                        <input id="wiki" class="inline" type="checkbox" name="backend-project" value="9">Wiki
+                    </label>
+            
+                    <label for="Forum">
+                        <input id="Forum" class="inline" type="checkbox" name="backend-project" value="10">Forum
+                    </label>
+
+                    
+        </fieldset>
+
+        <!-- end of checkbox section -->
+
+
+        <fieldset>
+            <label for="Comment">
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </label>
+
+            <input type="submit" id="submit" value="submit">
+
+        </fieldset>
+
+        <!-- end of textarea -->
+
+       
+
+
+
+        
+    </form>
+</body>
+</html>
